@@ -1,4 +1,4 @@
-Portfolio V0
+# Portfolio
 
 ## About
 
@@ -33,4 +33,3 @@ Check port: [http://localhost:3000](http://localhost:3000)
 ## Dependencies
 
 ## Demo
-# portfolio-v0-nextjs-ts
