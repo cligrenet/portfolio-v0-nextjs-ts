@@ -5,7 +5,7 @@ import Contact from '../src/components/Contact';
 import Footer from '../src/components/Footer';
 import Landing from '../src/components/Landing';
 import Portfolio from '../src/components/Portfolio';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Index.module.css';
 
 const Home: NextPage = () => {
 	return (
