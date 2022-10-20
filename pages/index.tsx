@@ -1,5 +1,4 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
 import About from '../src/components/About';
 import Contact from '../src/components/Contact';
 import Footer from '../src/components/Footer';
