@@ -3,8 +3,8 @@ import styles from '../../styles/About.module.css';
 
 const About = () => {
 	return (
-		<div>
-			<span>ABOUT</span>
+		<div className={styles.main}>
+			<span className={styles.title}>ABOUT</span>
 			<p>
 				Hello, I am Chenjia, a web developer.
 				<br />
