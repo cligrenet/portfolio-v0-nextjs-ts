@@ -1,0 +1,38 @@
+.main {
+	padding: 0 25vh 25vh 25vh;
+}
+
+.title {
+	font-size: 10rem;
+	font-weight: bolder;
+}
+
+.main form {
+	padding-top: 2rem;
+}
+
+.input {
+	width: 40vw;
+	margin-bottom: 2em;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 3px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+}
+
+.main button {
+	display: block;
+	margin: 0 auto;
+	padding: 12px 20px;
+}
+
+.main button:hover {
+	background-color: var(--prim-green);
+	color: black;
+	font-size: 0.9em;
+	font-weight: bold;
+	transform: translateY(10px);
+	border: none;
+	border-radius: 3px;
+}

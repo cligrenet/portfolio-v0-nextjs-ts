@@ -3,15 +3,24 @@ import styles from '../../styles/Contact.module.css';
 
 const Contact = () => {
 	return (
-		<div>
-			<span>CONTACT</span>
+		<div className={styles.main}>
+			<span className={styles.title}>CONTACT</span>
 			<form>
-				<label>NAME</label>
-				<input type="text" placeholder="Who are you ?" />
-				<label>EMAIL</label>
-				<input type="email" placeholder="What is your email ?" />
-				<label>MESSAGE</label>
-				<textarea name="message" id="message" cols="30" rows="10" placeholder="Tell me your ideas !"></textarea>
+				<input className={styles.input} type="text" placeholder="Who are you ?" id="name" name="name" />
+				<input
+					className={styles.input}
+					type="email"
+					placeholder="What is your email ?"
+					id="email"
+					name="email"
+				/>
+				<textarea
+					className={styles.input}
+					name="message"
+					id="message"
+					placeholder="Tell me your ideas !"
+				></textarea>
+
 				<button>SEND</button>
 			</form>
 		</div>
