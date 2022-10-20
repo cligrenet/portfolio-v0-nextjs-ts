@@ -1,13 +1,13 @@
 :root {
-	--prim-green: '#00ce7e';
-	--sky-blue: '#9be7f1';
-	--highlight-blue: '#2f4cff';
-	--dark-1: '#0c1a2e';
-	--yellow: '#ffc823';
-	--white-1: '#ffffff';
-	--white-2: '#f6fafb';
-	--grey-1: '#777';
-	--grey-2: '#828282';
+	--prim-green: #00ce7e;
+	--sky-blue: #9be7f1;
+	--highlight-blue: #2f4cff;
+	--dark-1: #0c1a2e;
+	--yellow: #ffc823;
+	--white-1: #ffffff;
+	--white-2: #f6fafb;
+	--grey-1: #777;
+	--grey-2: #828282;
 }
 
 html,
