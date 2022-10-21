@@ -11,6 +11,7 @@ import styles from '../styles/Index.module.css';
 
 const Home: NextPage = () => {
 	const [showTopBtn, setShowTopBtn] = useState(false);
+	const [aboutRef, setAboutRef] = useState(null);
 
 	useEffect(() => {
 		window.addEventListener('scroll', () => {
@@ -29,14 +30,21 @@ const Home: NextPage = () => {
 		});
 	};
 
+	const scrollDown = (ref: any) => {
+		window.scrollTo({
+			top: ref.offsetTop,
+			behavior: 'smooth',
+		});
+	};
+
 	return (
 		<div className={styles.container}>
 			<Head>
 				<title>Chenjia | Web Developer</title>
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 			</Head>
-			<Landing />
-			<About />
+			<Landing onScroll={() => scrollDown(aboutRef)} />
+			<About setAboutRef={setAboutRef} />
 			<Portfolio />
 			<Contact />
 			<Footer />

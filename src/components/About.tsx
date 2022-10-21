@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import styles from '../../styles/About.module.css';
 
-const About = () => {
+type Props = {
+	setAboutRef: any;
+};
+
+const About = (props: Props) => {
+	const aboutSection = useRef(null);
+	useEffect(() => {
+		props.setAboutRef(aboutSection.current);
+	}, [props]);
+
 	return (
-		<div className={styles.main}>
+		<div className={styles.main} ref={aboutSection}>
 			<span className={styles.title}>ABOUT</span>
 			<p>
 				Hello, I am Chenjia, a web developer.

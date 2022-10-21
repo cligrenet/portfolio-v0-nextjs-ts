@@ -3,7 +3,11 @@ import { GoPrimitiveDot } from 'react-icons/go';
 import { FaAngleDown } from 'react-icons/fa';
 import styles from '../../styles/Landing.module.css';
 
-const Landing = () => {
+type Props = {
+	onScroll: () => void;
+};
+
+const Landing = (props: Props) => {
 	return (
 		<div className={styles.main}>
 			<span className={styles.title}>CHENJIA</span>
@@ -37,7 +41,7 @@ const Landing = () => {
 			</div>
 			<span className={styles.title}>LI-GRENET</span>
 			<div className={styles.down}>
-				<span>
+				<span onClick={props.onScroll}>
 					<FaAngleDown />
 				</span>
 			</div>
