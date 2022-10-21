@@ -20,7 +20,7 @@
 .banner p {
 	color: black;
 	font-size: 1.2rem;
-	font-weight: bolder;
+	font-weight: 700;
 	animation-name: gliding;
 	animation-duration: 13s;
 	animation-timing-function: linear;
