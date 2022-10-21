@@ -1,8 +1,16 @@
-.main {
-	padding: 0 25vh 25vh 25vh;
-}
-
 .title {
 	font-size: 10rem;
 	font-weight: bolder;
+}
+
+.title:hover {
+	cursor: pointer;
+	color: black;
+	background-color: var(--highlight-blue);
+	display: block;
+	width: 100%;
+}
+
+.desp {
+	padding: 7vh 35vh 25vh 35vh;
 }
