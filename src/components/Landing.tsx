@@ -1,6 +1,6 @@
 import React from 'react';
 import { GoPrimitiveDot } from 'react-icons/go';
-import { BsChevronDown } from 'react-icons/bs';
+import { FaAngleDown } from 'react-icons/fa';
 import styles from '../../styles/Landing.module.css';
 
 const Landing = () => {
@@ -31,14 +31,14 @@ const Landing = () => {
 						<span>
 							<GoPrimitiveDot />
 						</span>{' '}
-						DETIAL FREAK
+						DETAIL FREAK
 					</span>
 				</p>
 			</div>
 			<span className={styles.title}>LI-GRENET</span>
 			<div className={styles.down}>
 				<span>
-					<BsChevronDown />
+					<FaAngleDown />
 				</span>
 			</div>
 		</div>
