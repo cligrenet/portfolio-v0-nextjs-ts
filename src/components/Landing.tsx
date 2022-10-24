@@ -1,4 +1,5 @@
 import React from 'react';
+import useMightyMouse from 'react-hook-mighty-mouse';
 import { GoPrimitiveDot } from 'react-icons/go';
 import { FaAngleDown } from 'react-icons/fa';
 import styles from '../../styles/Landing.module.css';
@@ -8,9 +9,34 @@ type Props = {
 };
 
 const Landing = (props: Props) => {
+	const {
+		selectedElement: {
+			position: { angle: angleLeftEye },
+		},
+	} = useMightyMouse(true, 'left-eye', { x: 20, y: 20 });
+	const {
+		selectedElement: {
+			position: { angle: angleRightEye },
+		},
+	} = useMightyMouse(true, 'right-eye', { x: 20, y: 20 });
+
+	const rotateLeftEye = `rotate(${-angleLeftEye}deg)`;
+	const rotateRightEye = `rotate(${-angleRightEye}deg)`;
+
 	return (
 		<div className={styles.main}>
-			<span className={styles.title}>CHENJIA</span>
+			<div className={styles.title}>
+				CHEN
+				<div className={styles.eye_right}>
+					<div className={styles.eyelid} />
+					<div>
+						<div id="right-eye" className={styles.eye} style={{ transform: rotateRightEye }}>
+							<div className={styles.pupil} />
+						</div>
+					</div>
+				</div>
+				JIA
+			</div>
 			<div className={styles.banner}>
 				<p>
 					<span className={styles.desp}>
@@ -39,7 +65,20 @@ const Landing = (props: Props) => {
 					</span>
 				</p>
 			</div>
-			<span className={styles.title}>LI-GRENET</span>
+			<div className={styles.title_bottom}>
+				LI{' '}
+				<div>
+					<div className={styles.eye_left}>
+						<div>
+							<div className={styles.eyelid} />
+							<div id="left-eye" className={styles.eye} style={{ transform: rotateLeftEye }}>
+								<div className={styles.pupil} />
+							</div>
+						</div>
+					</div>
+				</div>{' '}
+				GRENET
+			</div>
 			<div className={styles.down}>
 				<span onClick={props.onScroll}>
 					<FaAngleDown />

@@ -6,6 +6,17 @@
 .title {
 	font-size: 10rem;
 	font-weight: bolder;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.title_bottom {
+	font-size: 10rem;
+	font-weight: bolder;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .banner {
@@ -15,6 +26,7 @@
 	border-radius: 5rem;
 	margin: 0 auto;
 	width: 50vw;
+	z-index: 1000;
 }
 
 .banner p {
@@ -77,4 +89,55 @@
 	60% {
 		transform: translateY(-15px);
 	}
+}
+
+.eye_right {
+	position: relative;
+	padding: 0 0.2em 0 0.2em;
+	/* top: 24vh;
+	right: 37.3vw; */
+}
+
+.eye_left {
+	position: relative;
+	padding: 0 0.2em 0 0.2em;
+}
+
+.eyelid {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-color: black;
+	z-index: 400;
+	top: 3rem;
+	animation: blink 4.5s infinite ease-in alternate;
+	animation-delay: 1s;
+}
+@keyframes blink {
+	0% {
+		top: -120px;
+	}
+	95% {
+		top: -120px;
+	}
+	100% {
+		top: -50px;
+	}
+}
+
+.eye {
+	border-radius: 50%;
+	height: 70px;
+	width: 70px;
+	background-color: var(--prim-green);
+}
+
+.pupil {
+	position: absolute;
+	background-color: black;
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	left: 25px;
+	top: 12px;
 }
