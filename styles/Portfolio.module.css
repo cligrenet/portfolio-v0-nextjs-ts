@@ -14,3 +14,44 @@
 .desp {
 	padding: 7vh 35vh 25vh 35vh;
 }
+
+.desp ul {
+	display: flex;
+	list-style: none;
+	height: 25rem;
+	overflow-x: scroll;
+	padding: 2rem 0;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.desp ul ::-webkit-scrollbar {
+	height: 5px;
+	width: 5px;
+	background: #fff3;
+	-webkit-border-radius: 1ex;
+}
+
+.desp ul ::-webkit-scrollbar-thumb {
+	background: white;
+	-webkit-border-radius: 1ex;
+}
+
+.desp ul ::-webkit-scrollbar-corner {
+	background: #fff3;
+}
+
+.desp li {
+	flex: 0 0 200px;
+	background: var(--highlight-blue);
+	margin: 0em 1.2em 0 0;
+	padding: 1em 0.5em 0 0.5em;
+	border-radius: 5%;
+	overflow: hidden;
+	color: white;
+	font-weight: bold;
+}
+
+.desp li:last-of-type {
+	margin: 0;
+}
