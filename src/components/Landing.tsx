@@ -20,8 +20,12 @@ const Landing = (props: Props) => {
 		},
 	} = useMightyMouse(true, 'right-eye', { x: 20, y: 20 });
 
-	const rotateLeftEye = `rotate(${-angleLeftEye}deg)`;
-	const rotateRightEye = `rotate(${-angleRightEye}deg)`;
+	const styleLeftEye: React.CSSProperties = {
+		transform: angleLeftEye === null ? '' : `rotate(${-angleLeftEye}deg)`,
+	};
+	const styleRightEye: React.CSSProperties = {
+		transform: angleRightEye === null ? '' : `rotate(${-angleRightEye}deg)`,
+	};
 
 	return (
 		<div className={styles.main}>
@@ -30,7 +34,12 @@ const Landing = (props: Props) => {
 				<div className={styles.eye_right}>
 					<div className={styles.eyelid} />
 					<div>
-						<div id="right-eye" className={styles.eye} style={{ transform: rotateRightEye }}>
+						<div
+							id="right-eye"
+							className={styles.eye}
+							style={styleRightEye}
+							suppressHydrationWarning={true}
+						>
 							<div className={styles.pupil} />
 						</div>
 					</div>
@@ -71,7 +80,12 @@ const Landing = (props: Props) => {
 					<div className={styles.eye_left}>
 						<div>
 							<div className={styles.eyelid} />
-							<div id="left-eye" className={styles.eye} style={{ transform: rotateLeftEye }}>
+							<div
+								id="left-eye"
+								className={styles.eye}
+								style={styleLeftEye}
+								suppressHydrationWarning={true}
+							>
 								<div className={styles.pupil} />
 							</div>
 						</div>
