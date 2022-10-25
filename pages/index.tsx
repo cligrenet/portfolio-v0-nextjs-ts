@@ -48,8 +48,8 @@ const Home: NextPage = () => {
 			<Portfolio />
 			<Contact />
 			<Footer />
-			<div className={styles.btnTop}>
-				{showTopBtn && <FaAngleUp onClick={goToTop} className={styles.btnPosition} />}
+			<div className={styles.btn_top}>
+				{showTopBtn && <FaAngleUp onClick={goToTop} className={styles.btn_position} />}
 			</div>
 		</div>
 	);

@@ -1,13 +1,12 @@
 .container {
-	padding: 2rem;
 	text-align: center;
 }
 
-.btnTop {
+.btn_top {
 	position: relative;
 }
 
-.btnPosition {
+.btn_position {
 	position: fixed;
 	bottom: 40px;
 	right: 30px;
@@ -24,7 +23,7 @@
 	width: 50px;
 }
 
-.btnPosition:hover {
+.btn_position:hover {
 	animation: none;
 	background-color: black;
 	border: 2px solid var(--prim-green);
