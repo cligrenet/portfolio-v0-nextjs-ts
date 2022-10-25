@@ -12,5 +12,32 @@
 }
 
 .desp {
-	padding: 7vh 35vh 25vh 35vh;
+	padding: 3vh 35vh 25vh 35vh;
+}
+
+.circle_container {
+	display: table;
+	margin: 0 auto;
+}
+
+.circle {
+	width: 31rem;
+	height: 31rem;
+	padding: 5rem;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 50%;
+	font-size: 1.1em;
+	color: black;
+	background: var(--prim-green);
+}
+
+.icons {
+	font-size: 2rem;
+	padding: 1em;
+}
+
+.icons * {
+	margin-right: 0.3em;
 }
